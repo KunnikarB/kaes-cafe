@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Parisienne&family=Playfair+Display:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap");
+
+.reviews-section {
+  background-color: #fdd6ce;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.reviews-container {
+  max-width: 1300px;
+  margin: auto;
+  
+}
+
+/* Heading */
+
+.reviews-heading {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.reviews-subtitle {
+  font-size: 2.5rem;
+  color: var(--text-pink);
+  font-family: "Parisienne", cursive;
+  margin-bottom: 10px;
+}
+
+.reviews-title {
+  font-size: 2.7rem;
+  color: var(--text-pink);
+  font-family: "Playfair Display", serif;
+  margin-bottom: 24px;
+}
+
+.reviews-description {
+  max-width: 700px;
+  margin: auto;
+  color: var(--text-brown);
+  line-height: 2;
+  font-size: 1.2rem;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Grid */
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+  background:
+    linear-gradient(rgba(255, 240, 245, 0.5), rgba(255, 240, 245, 0.5)),
+    url('../assets/pink-bg.webp') no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 2rem;
+}
+
+/* Card */
+
+.review-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+
+  padding: 35px;
+  border-radius: 32px;
+
+  border: 1px solid rgba(255, 182, 193, 0.2);
+
+  box-shadow: 0 10px 30px rgba(214, 140, 160, 0.15);
+
+  transition: 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Stars */
+
+.stars {
+  color: #f4b400;
+  font-size: 1.3rem;
+  margin-bottom: 24px;
+  letter-spacing: 4px;
+}
+
+/* Review */
+
+.review-text {
+  color: var(--text-brown);
+  line-height: 2;
+  font-style: italic;
+  margin-bottom: 35px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* User */
+
+.review-user {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.review-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ffd9dd;
+}
+
+.review-user h3 {
+  margin: 0;
+  color: var(--text-pink);
+  font-size: 1.2rem;
+  font-family: "Playfair Display", serif;
+}
+
+.review-user p {
+  margin: 4px 0 0;
+  color: var(--accent);
+  font-size: 0.95rem;
+}
+
+/* Responsive */
+
+@media (max-width: 992px) {
+  .reviews-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .reviews-title {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .reviews-section {
+    padding: 80px 24px;
+  }
+
+  .reviews-subtitle {
+    font-size: 2rem;
+  }
+
+  .reviews-title {
+    font-size: 2.5rem;
+  }
+
+  .reviews-description {
+    font-size: 1rem;
+  }
+
+  .review-card {
+    padding: 28px;
+  }
+
+  .review-user {
+    flex-direction: column;
+    text-align: center;
+  }
+  .stars {
+    text-align: center;
+  }
+}

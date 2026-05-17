@@ -1,0 +1,150 @@
+/* Navbar.css or index.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Playfair+Display:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap');
+
+/* =========================
+   MOTION SYSTEM (CONSISTENT UI)
+========================= */
+
+:root {
+  --ease-soft: cubic-bezier(0.25, 0.8, 0.25, 1);
+  --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+
+  --t-fast: 150ms;
+  --t-med: 250ms;
+  --t-slow: 450ms;
+}
+
+:root {
+  --text-back: #000;
+  --text-brown: #9d613f;
+  --text: #4b5563;
+  --text-pink: #c0267d;
+  --text-h: #b83280;
+  --bg: #fff1f2;
+  --border: #e5e7eb;
+  --card-bg: #ffffff;
+  --nav-hover: #7c3aed;
+  --button-bg: #d6b8e0;
+  --footer-text: #3e2c23;
+  --accent: #7c3aed;
+  --accent-bg: rgba(124, 58, 237, 0.1);
+  --accent-border: rgba(124, 58, 237, 0.5);
+  --social-bg: rgba(244, 243, 236, 0.5);
+
+  --shadow:
+    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: 'Playfair Display', serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--sans);
+  line-height: 1.5;
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  width: 1126px;
+  max-width: 100%;
+  margin: 0 auto;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* =========================
+   Typography
+========================= */
+
+h1,
+h2 {
+  font-family: var(--heading);
+  font-weight: 700;
+  color: var(--text-h);
+}
+
+h1 {
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  line-height: 1.15;
+}
+
+h2 {
+  font-size: clamp(1.5rem, 2.2vw, 2.2rem);
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* =========================
+   Buttons
+========================= */
+
+.btn {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  color: var(--accent);
+  background: var(--accent-bg);
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition:
+    border-color 0.3s ease,
+    transform 0.2s ease;
+}
+
+.btn:hover {
+  border-color: var(--accent-border);
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+
+
+/* =========================
+   Dark Mode
+========================= */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #e5e7eb;
+    --text-pink: #f472b6;
+    --text-h: #f9a8d4;
+    --bg: #1f1720;
+    --border: #374151;
+    --card-bg: #111827;
+    --nav-hover: #ffffff;
+    --accent: #c084fc;
+  }
+
+  /* .navbar,
+  .nav-links {
+    background: var(--bg);
+  } */
+}

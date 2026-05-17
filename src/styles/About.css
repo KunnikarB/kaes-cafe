@@ -1,0 +1,138 @@
+/* About.css */
+
+@import url("https://fonts.googleapis.com/css2?family=Parisienne&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500&display=swap");
+
+.about {
+  min-height: 100vh;
+  background: linear-gradient(
+      rgba(255, 240, 245, 0),
+      rgba(255, 240, 245, 0)
+    ),
+    url("../assets/pink-bg.webp") no-repeat;
+  background-size: cover;
+  background-position: left;
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  padding-top: 10rem;
+}
+
+.about-container {
+  max-width: 650px;
+  width: 100%;
+  background: transparent;
+  backdrop-filter: blur(8px);
+  border-radius: 40px;
+  padding: 60px;
+  box-shadow: 0 15px 40px rgba(214, 160, 170, 0.25);
+}
+
+.about-content {
+  max-width: 760px;
+}
+
+.about-subtitle {
+  font-size: 2rem;
+  color: var(--accent);
+  font-family: "Parisienne", cursive;
+  margin-bottom: 10px;
+}
+
+.about-title {
+  font-size: 3rem;
+  font-family: "Playfair Display", serif;
+  color: var(--text-pink);
+  margin-bottom: 3rem;
+  line-height: 1.1;
+}
+
+.about-title span {
+  color: var(--accent);
+  font-family: parisienne, cursive;
+}
+
+.about-text {
+  font-size: 1.1rem;
+  line-height: 2;
+  color: var(--text-brown);
+  margin: 1.5rem 0;
+  font-weight: 400;
+}
+
+.about-signature {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-signature span {
+  display: block;
+  font-size: 1rem;
+  color: var(--accent);
+  letter-spacing: 1px;
+}
+
+.about-signature h2 {
+  font-family: "Parisienne", cursive;
+  font-size: 2rem;
+  color: var(--text-pink);
+  font-weight: 500;
+}
+
+/* Decorative Elements */
+
+.about-container::before {
+  content: "✿";
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  font-size: 3rem;
+  color: rgba(170, 59, 255, 0.7);
+}
+
+.about-container::after {
+  content: "✿";
+  position: absolute;
+  bottom: 30px;
+  left: 60px;
+  font-size: 2rem;
+  color: rgba(170, 59, 255, 0.7);
+}
+
+.about-container {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .about {
+    padding: 160px 16px;
+  }
+
+  .about-container {
+    padding: 40px 24px;
+    border-radius: 28px;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-subtitle {
+    font-size: 1.6rem;
+  }
+
+  .about-text {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .about-signature h2 {
+    font-size: 2rem;
+  }
+}

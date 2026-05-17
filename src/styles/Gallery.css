@@ -1,0 +1,129 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Parisienne&family=Playfair+Display:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap");
+
+.gallery {
+  min-height: 100vh;
+
+  background: linear-gradient(
+      rgba(255, 245, 247, 0.9),
+      rgba(255, 245, 247, 0)
+    ),
+    url('../assets/pink-cafe-bg.webp') no-repeat;
+
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  padding-top: 10rem;
+}
+
+.gallery-overlay {
+  max-width: 1300px;
+  margin: auto;
+}
+
+.gallery-header {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.gallery-subtitle {
+  font-size: 2rem;
+  color: var(--text-pink);
+  font-family: "Parisienne", cursive;
+  margin-bottom: 12px;
+}
+
+.gallery-title {
+  font-size: 3rem;
+  color: var(--accent);
+  font-family: "Playfair Display", serif;
+  margin-bottom: 20px;
+}
+
+.gallery-title span {
+  font-family: "Parisienne", cursive;
+  color: var(--text-pink);
+}
+
+.gallery-description {
+  max-width: 750px;
+  margin: auto;
+  color: var(--text-brown);
+  font-weight: 500;
+  line-height: 2;
+  font-size: 1.1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.gallery-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 30px;
+  height: 420px;
+
+  box-shadow: 0 12px 30px rgba(214, 140, 160, 0.18);
+
+  cursor: pointer;
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  transition: transform 0.5s ease;
+}
+
+.gallery-card:hover img {
+  transform: scale(1.08);
+}
+
+.gallery-card-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    transparent,
+    rgba(0, 0, 0, 0.55)
+  );
+
+  display: flex;
+  align-items: flex-end;
+  padding: 30px;
+}
+
+.gallery-card-overlay h2 {
+  color: white;
+  font-size: 2rem;
+  font-family: "Playfair Display", serif;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .gallery {
+    padding: 170px 16px;
+  }
+
+  .gallery-subtitle {
+    font-size: 1.7rem;
+  }
+
+  .gallery-title {
+    font-size: 2rem;
+  }
+
+  .gallery-description {
+    font-size: 1rem;
+  }
+
+  .gallery-card {
+    height: 320px;
+  }
+}
