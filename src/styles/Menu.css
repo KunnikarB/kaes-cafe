@@ -49,19 +49,29 @@
 
 .menu-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+  grid-template-columns: repeat(auto-fit, minmax(280px, 320px));
+
+  justify-content: center;
+
   gap: 35px;
+
   padding: 4rem;
-  background: linear-gradient(
+
+  background:
+    linear-gradient(
       rgba(255, 240, 245, 0.5),
       rgba(255, 240, 245, 0.5)
     ),
-    url("../assets/pink-bg.webp") repeat;
+    url('../assets/pink-bg.webp') repeat;
+
   background-size: contain;
   background-position: center;
 }
 
 .menu-card {
+  width: 100%;
+  max-width: 320px;
   background: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(8px);
   border-radius: 30px;
@@ -122,7 +132,21 @@
 
 @media (max-width: 768px) {
   .menu {
-    padding: 170px 16px;
+    padding: 170px 16px 80px;
+  }
+
+  .menu-grid {
+    grid-template-columns: 1fr;
+
+    justify-items: center;
+
+    padding: 1rem;
+    gap: 2rem;
+  }
+
+  .menu-card {
+    width: 100%;
+    max-width: 340px;
   }
 
   .menu-title {
@@ -135,6 +159,7 @@
 
   .menu-description {
     font-size: 1rem;
+    line-height: 1.8;
   }
 
   .menu-card img {
@@ -142,10 +167,15 @@
   }
 
   .menu-card-content h2 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
-  .menu-card-content button{
-    font-size: .9rem;
+  .menu-card-content p {
+    font-size: 1rem;
+  }
+
+  .menu-card-content button {
+    width: 100%;
+    font-size: 0.95rem;
   }
 }
