@@ -11,7 +11,8 @@
 .overlay {
   width: 100%;
   min-height: 100vh;
-  background: rgba(255, 245, 247, 0.55);
+  background: var(--bg);
+  border-radius: 36px;
   backdrop-filter: blur(40px);
   display: flex;
 }
@@ -20,10 +21,13 @@
   max-width: 1250px;
   width: 100%;
   background:
-    linear-gradient(rgba(255, 240, 245, 0.5), rgba(255, 240, 245, 0.5)),
+    linear-gradient(rgba(255, 240, 245, 0.1), rgba(255, 240, 245, 0.1)),
     url('../assets/pink-bg.webp') no-repeat;
   background-size: cover;
   background-position: center;
+  border-radius: 32px;
+  overflow: hidden;
+  padding-left: 2.5rem;
 }
 
 .subtitle {
@@ -31,7 +35,6 @@
   color: var(--accent);
   font-family: 'Parisienne', cursive;
   margin-bottom: 10px;
-  padding-left: 2.5rem;
 }
 
 .title {
@@ -39,7 +42,6 @@
   color: var(--text-pink);
   font-family: 'Parisienne', cursive;
   line-height: 1;
-  padding-left: 2.5rem;
 }
 
 .location {
@@ -49,7 +51,6 @@
   margin-bottom: 30px;
   color: var(--accent);
   font-family: 'Playfair Display', serif;
-  padding-left: 2.5rem;
 }
 
 .description {
@@ -62,7 +63,6 @@
   background: rgba(255, 255, 255, 0.55);
   backdrop-filter: blur(1px);
   padding: 22px;
-  margin-left: 2.5rem;
   border-radius: 24px;
   box-shadow: 0 10px 30px rgba(215, 130, 150, 0.15);
   transition: all 0.3s ease;
@@ -87,7 +87,8 @@
 
 .primary-btn {
   border: 1px solid var(--accent);
-  background: transparent;
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(1px);
   color: var(--text-pink);
 }
 
@@ -110,7 +111,7 @@
 
 .features {
   display: flex;
-  gap: 2rem;
+  gap: 2.5rem;
   flex-wrap: wrap;
   margin-bottom: 5rem;
 }
@@ -152,39 +153,125 @@
   border-radius: 16px;
   margin-bottom: 15px;
 } 
+/* 
+.buttons,
+.features {
+  justify-content: center;
+} */
 
 /* Responsive */
 @media (max-width: 768px) {
+  .hero {
+    padding: 120px 16px 60px;
+  }
+
+  .overlay {
+    justify-content: center;
+    align-items: center;
+  }
+
   .hero-content {
-  
+    width: 100%;
     margin: 0 auto;
+    padding: 2rem 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+  }
+
+  /* Remove left spacing */
+  .subtitle,
+  .title,
+  .location {
+    padding-left: 0;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+    background: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(1px);
+    padding: 2px;
+    border-radius: 10px;
   }
 
   .title {
-    font-size: 2rem;
-  }
-  .description {
-    font-size: 1rem;
-    max-width: 350px;
-    width: 100%;
+    font-size: 2.5rem;
+    background: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(1px);
+    padding: 4px;
+    border-radius: 10px;
   }
 
-  .features, .buttons {
+  .location {
+    /* font-size: 1rem;
+    letter-spacing: 4px;
+    background: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(1px);
+    padding: 2px;
+    border-radius: 10px; */
+    display: none;
+  }
+
+  .description {
+    margin: 0 auto 2rem;
+
+    max-width: 100%;
+    width: 100%;
+
+    font-size: 1rem;
+    line-height: 1.8;
+
+    padding: 1.25rem;
+  }
+
+  .buttons {
+    width: 100%;
+
+    display: flex;
     flex-direction: column;
-    margin-left: 3rem;
+    align-items: center;
+
+    gap: 1rem;
+
+    margin: 0 auto 2rem;
+  }
+
+  .buttons > :first-child {
+    margin-left: 0;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .features {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 1.5rem;
+
+    margin: 0 auto;
+  }
+
+  .features > :first-child {
+    margin-left: 0;
   }
 
   .feature-card {
-    max-width: 350px;
+    max-width: 340px;
     width: 100%;
+  }
+
+  .feature-card img {
+    height: 220px;
   }
 }
 
-@media (min-width: 769px) {
-  .features > :first-child {
-    margin-left: 3rem;
-  }
-  .buttons > :first-child {
-    margin-left: 8rem;
-  }
-}

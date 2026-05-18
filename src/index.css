@@ -17,11 +17,11 @@
 
 :root {
   --text-back: #000;
-  --text-brown: #9d613f;
+  --text-brown: #6b4f43;
   --text: #4b5563;
-  --text-pink: #c0267d;
-  --text-h: #b83280;
-  --bg: #fff1f2;
+  --text-pink: #9d174d;
+  --text-h: #be185d;
+  --bg: #fdd6ce;;
   --border: #e5e7eb;
   --card-bg: #ffffff;
   --nav-hover: #7c3aed;
@@ -136,7 +136,7 @@ p {
     --text: #e5e7eb;
     --text-pink: #f472b6;
     --text-h: #f9a8d4;
-    --bg: #1f1720;
+    --bg: #6b4f43;
     --border: #374151;
     --card-bg: #111827;
     --nav-hover: #ffffff;

@@ -12,14 +12,8 @@ const Hero = () => {
         <div className="hero-content">
           {' '}
           <p className="subtitle">Bienvenue à</p>{' '}
-          <h1 className="title">Kae’s Café</h1>{' '}
+          <h1 className="title"> Kae’s Café</h1>{' '}
           <h2 className="location">PARIS</h2>{' '}
-          <p className="description ">
-            {' '}
-            A luxurious pink French café inspired by the beauty of Paris. Enjoy
-            handcrafted pastries, creamy lattes, romantic interiors, and dreamy
-            moments made with love.{' '}
-          </p>{' '}
           <div className="buttons">
             {' '}
             <Link to="/menu">
@@ -31,6 +25,12 @@ const Hero = () => {
               <button className="secondary-btn">Book a Table</button>{' '}
             </Link>{' '}
           </div>{' '}
+          <p className="description ">
+            {' '}
+            A luxurious pink French café inspired by the beauty of Paris. Enjoy
+            handcrafted pastries, creamy lattes, romantic interiors, and dreamy
+            moments made with love.{' '}
+          </p>{' '}
           <div className="features">
             {' '}
             <div className="feature-card">
