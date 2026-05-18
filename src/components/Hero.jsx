@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import '../styles/Hero.css';
 import coffeeImg from '../assets/coffee.webp';
 import miniCakeImg from '../assets/mini.webp';
+import heroImg from '../assets/bgImg.webp';
 
 const Hero = () => {
   return (
@@ -14,16 +15,11 @@ const Hero = () => {
           <p className="subtitle">Bienvenue à</p>{' '}
           <h1 className="title"> Kae’s Café</h1>{' '}
           <h2 className="location">PARIS</h2>{' '}
-          <div className="buttons">
-            {' '}
-            <Link to="/menu">
-              {' '}
-              <button className="primary-btn">View Menu</button>{' '}
-            </Link>{' '}
-            <Link to="/contact">
-              {' '}
-              <button className="secondary-btn">Book a Table</button>{' '}
-            </Link>{' '}
+          <div className="mobile-hero-image">
+            <img
+              src={heroImg}
+              alt="Elegant pink coffee and pastries at Kae's Café"
+            />
           </div>{' '}
           <p className="description ">
             {' '}
@@ -45,6 +41,17 @@ const Hero = () => {
               <p>Delicate desserts inspired by Paris.</p>{' '}
               <img src={miniCakeImg} alt="French Pastries" />{' '}
             </div>{' '}
+          </div>{' '}
+          <div className="buttons">
+            {' '}
+            <Link to="/menu">
+              {' '}
+              <button className="primary-btn">View Menu</button>{' '}
+            </Link>{' '}
+            <Link to="/contact">
+              {' '}
+              <button className="secondary-btn">Book a Table</button>{' '}
+            </Link>{' '}
           </div>{' '}
         </div>{' '}
       </div>{' '}
