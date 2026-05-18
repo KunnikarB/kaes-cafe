@@ -8,8 +8,7 @@
 
 .reviews-container {
   max-width: 1300px;
-  margin: auto;
-  
+  margin: auto; 
 }
 
 /* Heading */
@@ -23,7 +22,6 @@
   font-size: 2.5rem;
   color: var(--text-pink);
   font-family: "Parisienne", cursive;
-  margin-bottom: 10px;
 }
 
 .reviews-title {
@@ -34,7 +32,7 @@
 }
 
 .reviews-description {
-  max-width: 700px;
+  max-width: 500px;
   margin: auto;
   color: var(--text-brown);
   line-height: 2;
@@ -61,10 +59,8 @@
 .review-card {
   background: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(10px);
-
   padding: 35px;
   border-radius: 32px;
-
   border: 1px solid rgba(255, 182, 193, 0.2);
 
   box-shadow: 0 10px 30px rgba(214, 140, 160, 0.15);
@@ -163,5 +159,21 @@
   }
   .stars {
     text-align: center;
+  }
+}
+
+@media (max-width: 425px) {
+  .reviews-subtitle {
+    font-size: 1.5rem;
+  }
+
+  .reviews-title {
+    font-size: 2rem;
+  }
+
+  .reviews-description {
+    font-size: 1rem;
+    text-align: start;
+    padding-left: 2rem;
   }
 }

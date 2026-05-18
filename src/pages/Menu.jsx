@@ -23,7 +23,7 @@ const menuItems = [
     image: strawberryCakeImg,
   },
   {
-    title: 'Yohurt icecream',
+    title: 'Chai Yohurt',
     price: '€15',
     image: fruitsYohurt,
   },

@@ -127,3 +127,33 @@
     height: 320px;
   }
 }
+
+@media (max-width: 425px) {
+  .gallery {
+    padding: 170px 36px;
+    margin: 0 auto;
+  }
+
+  .gallery-subtitle {
+    font-size: 1.7rem;
+  }
+
+  .gallery-title {
+    font-size: 2rem;
+  }
+
+  .gallery-description {
+    font-size: 1rem;
+    text-align: start;
+    padding-left: 1rem;
+  }
+
+  .gallery-card {
+    height: 320px;
+  }
+
+  .gallery-card-overlay h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}

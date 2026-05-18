@@ -22,8 +22,9 @@
 .about-container {
   max-width: 650px;
   width: 100%;
-  background: transparent;
+  background: rgba(255, 255, 255, 0.55);
   backdrop-filter: blur(8px);
+  padding: 22px;
   border-radius: 40px;
   box-shadow: 0 15px 40px rgba(214, 160, 170, 0.25);
 }
@@ -87,7 +88,7 @@
   content: "✿";
   position: absolute;
   top: 30px;
-  right: 40px;
+  right: 20px;
   font-size: 3rem;
   color: rgba(170, 59, 255, 0.7);
 }
@@ -95,8 +96,8 @@
 .about-container::after {
   content: "✿";
   position: absolute;
-  bottom: 30px;
-  left: 60px;
+  bottom: 70px;
+  left: 20px;
   font-size: 2rem;
   color: rgba(170, 59, 255, 0.7);
 }
@@ -134,5 +135,21 @@
 
   .about-signature h2 {
     font-size: 2rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .about-container::before {
+    display: none;
+  }
+
+  .about-title .about-signature {
+    font-size: 1.8rem;
+  }
+
+  .about-image {
+    max-width: 350px;
+    width: 100%;
+    margin: 0 auto;
   }
 }

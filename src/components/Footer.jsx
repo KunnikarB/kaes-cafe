@@ -23,7 +23,9 @@ const Footer = () => {
             </div>
             <p>25 Rue de Paris, France</p>
             <p>hello@kaescafe.com</p>
-            <p>Mon - Sun • 8AM - 10PM</p>
+            <p>
+              Mon - Sun <span>✿</span> 8AM - 10PM
+            </p>
           </div>
           <div className="footer-socials">
             <h2>Follow Us</h2>
@@ -52,7 +54,11 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-bottom ">
-          <p>© 2026 Kae’s Café • Made with ♡ in Paris</p>
+          <p>
+            {' '}
+            <span>©</span> 2026 Kae's Café <span>✿</span> Made with ♡ in Paris{' '}
+            <span>✿</span>{' '}
+          </p>
         </div>
       </div>
     </footer>
