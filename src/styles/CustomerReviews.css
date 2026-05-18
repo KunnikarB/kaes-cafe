@@ -1,14 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Parisienne&family=Playfair+Display:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Playfair+Display:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap');
 
 .reviews-section {
   background-color: #fdd6ce;
-  padding: 1rem;
+  padding: 0 1rem 2rem;
   overflow: hidden;
+  position: relative;
+  top: -20px;
 }
 
 .reviews-container {
   max-width: 1300px;
-  margin: auto; 
+  margin: auto;
 }
 
 /* Heading */
@@ -21,13 +23,13 @@
 .reviews-subtitle {
   font-size: 2.5rem;
   color: var(--text-pink);
-  font-family: "Parisienne", cursive;
+  font-family: 'Parisienne', cursive;
 }
 
 .reviews-title {
   font-size: 2.7rem;
   color: var(--text-pink);
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   margin-bottom: 24px;
 }
 
@@ -37,7 +39,7 @@
   color: var(--text-brown);
   line-height: 2;
   font-size: 1.2rem;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Grid */
@@ -88,7 +90,7 @@
   line-height: 2;
   font-style: italic;
   margin-bottom: 35px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* User */
@@ -111,7 +113,7 @@
   margin: 0;
   color: var(--text-pink);
   font-size: 1.2rem;
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
 }
 
 .review-user p {
@@ -134,7 +136,11 @@
 
 @media (max-width: 768px) {
   .reviews-section {
-    padding: 80px 24px;
+    padding: 2rem 1rem;
+  }
+
+  .reviews-heading {
+    margin-bottom: 2.5rem;
   }
 
   .reviews-subtitle {
