@@ -49,15 +49,10 @@
 
 .menu-grid {
   display: grid;
-
-  grid-template-columns: repeat(auto-fit, minmax(280px, 320px));
-
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   justify-content: center;
-
-  gap: 35px;
-
+  gap: 20px;
   padding: 4rem;
-
   background:
     linear-gradient(
       rgba(255, 240, 245, 0.5),
@@ -96,7 +91,7 @@
 }
 
 .menu-card-content h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: var(--text-pink);
   margin-bottom: 10px;
   font-family: "Playfair Display", serif;
@@ -104,7 +99,7 @@
 
 .menu-card-content p {
   color: var(--text-brown);
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 500;
   margin-bottom: 24px;
   font-family: "Poppins", sans-serif;
@@ -117,7 +112,7 @@
   background: var(--accent);
   color: white;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: .8rem;
   cursor: pointer;
   transition: 0.3s ease;
   font-family: "Poppins", sans-serif;
@@ -137,20 +132,18 @@
 
   .menu-grid {
     grid-template-columns: 1fr;
-
     justify-items: center;
-
     padding: 1rem;
     gap: 2rem;
   }
 
   .menu-card {
     width: 100%;
-    max-width: 340px;
+    max-width: 500px;
   }
 
   .menu-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .menu-subtitle {
@@ -159,7 +152,7 @@
 
   .menu-description {
     font-size: 1rem;
-    line-height: 1.8;
+    line-height: 1.5;
   }
 
   .menu-card img {
@@ -167,7 +160,7 @@
   }
 
   .menu-card-content h2 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 
   .menu-card-content p {
@@ -175,7 +168,42 @@
   }
 
   .menu-card-content button {
+    width: 40%;
+    font-size: 0.9rem;   
+  }
+}
+
+@media (max-width: 425px) {
+
+  .menu-card {
     width: 100%;
-    font-size: 0.95rem;
+    max-width: 300px;
+  }
+
+
+  .menu-title {
+    font-size: 1.6rem;
+  }
+
+  .menu-subtitle {
+    font-size: 1.35rem;
+  }
+
+  .menu-description {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .menu-card-content h2 {
+    font-size: 1.1rem;
+  }
+
+  .menu-card-content p {
+    font-size: .9rem;
+  }
+
+  .menu-card-content button {
+    width: 60%;
+    font-size: 0.85rem;   
   }
 }

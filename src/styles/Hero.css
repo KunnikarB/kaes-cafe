@@ -54,14 +54,14 @@
   font-size: 1.15rem;
   line-height: 2;
   color: var(--text-brown);
-  max-width: 400px;
+  max-width: 420px;
   margin-bottom: 40px;
   font-family: 'Poppins', sans-serif;
-  background: rgba(255, 255, 255, 0.55);
-  backdrop-filter: blur(1px);
+  background: rgba(255, 255, 255,0.6);
+  border: 1px solid var(--text-pink);
   padding: 22px;
-  border-radius: 24px;
-  box-shadow: 0 10px 30px rgba(215, 130, 150, 0.15);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
   transition: all 0.3s ease;
 }
 
@@ -73,14 +73,14 @@
 }
 
 .feature-card {
-  max-width: 400px;
+  max-width: 420px;
   width: 100%;
   border: 1px solid var(--text-pink);
   backdrop-filter: blur(6px);
   padding: 22px;
   border-radius: 14px;
   background: rgba(255, 255, 255, 0.55);
-  backdrop-filter: blur(1px);
+  backdrop-filter: blur(100px);
   box-shadow: var(--shadow);
   overflow: hidden;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -115,7 +115,7 @@
   height: 280px;
   object-fit: cover;
   border-radius: 16px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 } 
 
 /* card focus for keyboard users */
