@@ -8,7 +8,6 @@
     url("../assets/pink-bg.webp") no-repeat;
   background-size: cover;
   background-position: left;
-  /* background-color: var(--bg); */
   padding-top: 80px;
   border-top: 1px solid rgba(214, 140, 160, 0.15);
 }

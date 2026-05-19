@@ -3,7 +3,8 @@
 .hero {
   background-color: #fdd6ce;
   padding: 2rem;
-  padding-top: 10rem;  
+  padding-top: 10rem; 
+  
 }
 
 .overlay {
@@ -12,17 +13,18 @@
   border-radius: 36px;
   backdrop-filter: blur(40px);
   display: flex;
+
 }
 
 .hero-content {
-  max-width: 1250px;
+  max-width: 1300px;
   width: 100%;
+  border-radius: 36px;
   background:
     linear-gradient(rgba(255, 240, 245, 0.1), rgba(255, 240, 245, 0.1)),
     url('../assets/pink-bg.webp') no-repeat;
   background-size: cover;
   background-position: center;
-  border-radius: 32px;
   overflow: hidden;
   padding-left: 2.5rem;
 }

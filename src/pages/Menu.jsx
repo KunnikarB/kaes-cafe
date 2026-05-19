@@ -22,21 +22,13 @@ const menuItems = [
     price: '€14',
     image: strawberryCakeImg,
   },
-  {
-    title: 'Chai Yohurt',
-    price: '€15',
-    image: fruitsYohurt,
-  },
+  
   {
     title: 'Berry Cheesecake',
     price: '€15',
     image: berryCake,
   },
-  {
-    title: 'French Croissant',
-    price: '€7',
-    image: croissantsImg,
-  },
+  
   {
     title: 'Rose Latte',
     price: '€8',
@@ -47,11 +39,7 @@ const menuItems = [
     price: '€9',
     image: cappuccinoImg,
   },
-  {
-    title: 'Fruits Ice Tea',
-    price: '€10',
-    image: fruitsIceTea,
-  },
+  
   {
     title: 'Tea',
     price: '€5',

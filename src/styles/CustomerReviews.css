@@ -2,10 +2,8 @@
 
 .reviews-section {
   background-color: #fdd6ce;
-  padding: 0 1rem 2rem;
   overflow: hidden;
   position: relative;
-  top: -20px;
 }
 
 .reviews-container {
@@ -53,7 +51,8 @@
     url('../assets/pink-bg.webp') no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 2rem;
+  padding: 5rem;
+  
 }
 
 /* Card */
