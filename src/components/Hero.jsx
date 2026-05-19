@@ -3,6 +3,7 @@ import '../styles/Hero.css';
 import coffeeImg from '../assets/coffee.webp';
 import miniCakeImg from '../assets/mini.webp';
 import heroImg from '../assets/bgImg.webp';
+import { Coffee } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -34,24 +35,41 @@ const Hero = () => {
               <h3>Premium Coffee</h3>{' '}
               <p>Freshly brewed with love and elegance.</p>{' '}
               <img src={coffeeImg} alt="Premium Coffee" />{' '}
+              <div className="buttons">
+                {' '}
+                <Link to="/menu">
+                  {' '}
+                  <button className="primary-btn">
+                    <Coffee size={18} /> Menu
+                  </button>{' '}
+                </Link>{' '}
+                <Link to="/contact">
+                  {' '}
+                  <button className="secondary-btn">Buy Now</button>{' '}
+                </Link>{' '}
+              </div>{' '}
             </div>{' '}
             <div className="feature-card">
               {' '}
               <h3>French Pastries</h3>{' '}
               <p>Delicate desserts inspired by Paris.</p>{' '}
               <img src={miniCakeImg} alt="French Pastries" />{' '}
+              <div className="buttons">
+                {' '}
+                <Link to="/menu">
+                  {' '}
+                  <button className="primary-btn">
+                    {' '}
+                    <Coffee size={18} />
+                    Menu
+                  </button>{' '}
+                </Link>{' '}
+                <Link to="/contact">
+                  {' '}
+                  <button className="secondary-btn">Buy Now</button>{' '}
+                </Link>{' '}
+              </div>{' '}
             </div>{' '}
-          </div>{' '}
-          <div className="buttons">
-            {' '}
-            <Link to="/menu">
-              {' '}
-              <button className="primary-btn">View Menu</button>{' '}
-            </Link>{' '}
-            <Link to="/contact">
-              {' '}
-              <button className="secondary-btn">Book a Table</button>{' '}
-            </Link>{' '}
           </div>{' '}
         </div>{' '}
       </div>{' '}
