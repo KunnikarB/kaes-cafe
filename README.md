@@ -78,8 +78,6 @@ npm run dev
 ## Hamburger Menu
  <img width="497" height="380" alt="Screenshot 2026-05-17 at 21 43 03" src="https://github.com/user-attachments/assets/2ea3170a-ecc8-4940-ad79-e7f12c368d7c" />
 
-
-
 ## 🎨 Design Inspiration
 
 Inspired by:
@@ -89,7 +87,6 @@ Inspired by:
 - Soft pink aesthetics
 - Modern UI
 - Elegant editorial typography
-
 
 
 ## 📸 Future Improvements
@@ -102,6 +99,167 @@ Inspired by:
 - Gallery lightbox
 - Backend API
 - WCAG-accessibility improvements
+
+---
+
+## Table Reservation Feature ♡
+
+Kae’s Café includes a fully functional table reservation system built with React and EmailJS.
+
+### Features
+
+- Customers can:
+  - Book a table online
+  - Select number of guests
+  - Choose booking date
+  - Choose booking time
+  - Add special requests
+  - Send reservation requests directly to café email
+
+### Booking Validation
+
+The reservation system includes validation to improve booking accuracy:
+
+- Prevents selecting past dates
+- Prevents selecting past times
+- Restricts reservations to café opening hours
+- Required form validation for important fields
+
+### Technologies Used
+
+- React
+- EmailJS
+- CSS3
+- JavaScript Form Validation
+
+### Email Notifications
+
+Reservation requests are automatically sent to the café owner’s email using EmailJS.
+
+Example reservation email:
+
+```txt
+New Table Reservation ♡
+
+Name: Anna
+Email: anna@gmail.com
+Phone: 123456789
+
+Guests: 4
+
+Booking Date: 2026-05-20
+Booking Time: 18:30
+
+Special Requests:
+Window table please
+```
+
+### Installation
+
+Install EmailJS package:
+
+```bash
+npm install @emailjs/browser
+```
+
+### Environment Setup
+
+Create an EmailJS account and add:
+
+- Service ID
+- Template ID
+- Public Key
+
+Inside the React project.
+
+### Future Improvements
+
+- Booking confirmation emails
+- Google Calendar integration
+- Database storage
+- Admin dashboard
+- Online payment deposits
+- Real-time table availability
+- Reservation management system
+## Table Reservation Feature ♡
+
+Kae’s Café includes a fully functional table reservation system built with React and EmailJS.
+
+### Features
+
+- Customers can:
+  - Book a table online
+  - Select number of guests
+  - Choose booking date
+  - Choose booking time
+  - Add special requests
+  - Send reservation requests directly to café email
+
+### Booking Validation
+
+The reservation system includes validation to improve booking accuracy:
+
+- Prevents selecting past dates
+- Prevents selecting past times
+- Restricts reservations to café opening hours
+- Required form validation for important fields
+
+### Technologies Used
+
+- React
+- EmailJS
+- CSS3
+- JavaScript Form Validation
+
+### Email Notifications
+
+Reservation requests are automatically sent to the café owner’s email using EmailJS.
+
+Example reservation email:
+
+```txt
+New Table Reservation ♡
+
+Name: Anna
+Email: anna@gmail.com
+Phone: 123456789
+
+Guests: 4
+
+Booking Date: 2026-05-20
+Booking Time: 18:30
+
+Special Requests:
+Window table please
+```
+
+### Installation
+
+Install EmailJS package:
+
+```bash
+npm install @emailjs/browser
+```
+
+### Environment Setup
+
+Create an EmailJS account and add:
+
+- Service ID
+- Template ID
+- Public Key
+
+Inside the React project.
+
+### Future Improvements
+
+- Booking confirmation emails
+- Google Calendar integration
+- Database storage
+- Admin dashboard
+- Online payment deposits
+- Real-time table availability
+- Reservation management system
 
 
 
